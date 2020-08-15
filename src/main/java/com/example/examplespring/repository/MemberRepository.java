@@ -10,6 +10,4 @@ public interface MemberRepository {
     Optional<Member> findById(Long id);
     Optional<Member> findByName(String name);
     List<Member> findAll(); //모든 회원리스트 반환
-
-    void clearStore();
 }

@@ -1,7 +1,13 @@
 package com.example.examplespring.domain;
 
+import javax.persistence.*;
+
+@Entity
 public class Member {
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY) //db가 알아서 생성해주는것
     private Long id;
+
+//    @Column(name = "username") // 이렇게 매핑을 한다.
     private String name;
 
     public Long getId() {
